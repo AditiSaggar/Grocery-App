@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/registration.css">
+    <link rel="icon" type="images/x-icon" href="./assets/images/favicon.png">
+   
+</head>
+
+<body>
+    <div class="container">
+        <div class="form" id="validateForm">
+            <form>
+                <h1>New Registration</h1>
+                <div class="field fname">
+                    <div class="input-area">
+                        <input type="text" placeholder="First Name" id="fname">
+                        <i class=" icon fa-solid fa-user"></i>
+                    </div>
+                    <p id="fname_val"></p>
+                </div>
+                <div class="field lname">
+                    <div class="input-area">
+                        <input type="text" placeholder="Last Name" id="lname">
+                        <i class="icon fa-solid fa-user"></i>
+                    </div>
+                    <p id="lname_val"></p>
+                </div>
+                <div class="field email">
+                    <div class="input-area">
+                        <input type="text" placeholder="Email" id="regEmail">
+                        <i class="icon fa-solid fa-envelope"></i>
+                    </div>
+                    <p id="email_val"></p>
+                </div>
+                <div class="field password">
+                    <div class="input-area">
+                        <input type="password" placeholder="Password" id="password">
+                        <i class="icon fa-solid fa-lock"></i>
+                    </div>
+                    <p id="pwd_Val"></p>
+                </div>
+                <div class="field password">
+                    <div class="input-area">
+                        <input type="password" placeholder="Confirm Password" id="confirmPassword">
+                        <i class="icon fa-solid fa-lock"></i>
+                    </div>
+                    <p id="conPwd_val"></p>
+                </div>
+                <div class="field contact">
+                    <div class="input-area">
+                        <input type="text" placeholder="Phone Number" id="contact" maxlength="10" minlength="10">
+                        <i class="icon fa-solid fa-phone"></i>
+                    </div>
+                    <p id="contact_val"></p>
+                </div>
+                <button type="button" value="Submit" class="Loginbtn btn btn-success" onclick="validateForm()">Submit</button>
+                <button class="Regbtn btn btn-danger" type="Back"><a href="./assets/pages/loginPage.html">Back To Login</a></button>
+            </form>
+        </div>
+    </div>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/registration.js"></script>
+</body>
+</html>

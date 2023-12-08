@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/loginPage.css">
+    <link rel="icon" type="images/x-icon" href="../images/favicon.png">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="form">
+          <h1>Login</h1> 
+   
+          <form>
+              <div class="field email">
+                  <div class="input-area">
+                      <input type="text" placeholder="Email" id="email">
+                      <i class="icon fa-solid fa-envelope"></i>
+                    </div>
+                    <p id="email_error"></p>
+              </div>
+              <div class="field password">
+                  <div class="input-area">
+                      <input type="password" placeholder="Password" id="password">
+                      <i class="icon fa-solid fa-lock"></i>
+                  </div>
+                  <p id="password_error"></p>
+              </div>
+              <p>By creating an account you agree to our <a href="#" style="color:rgb(30, 107, 183)">Terms & Privacy</a>.</p>
+            
+              <div class="loginBtn">
+                <input type="button" value='Login' class="btn btn-danger" onclick="loginUser()"  style="font-size:20px" />
+                <p class="pt-3">Doesn't have an account yet ?<a href="../../registration.html" style="color:rgb(30, 107, 183)"><strong> Register here</strong></a></p>  
+              </div>
+          </form>
+      </div>
+  </div>
+
+    <script src="../js/loginscript.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+   
+    
+</body>
+</html>

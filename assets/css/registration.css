@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    background-image: url("/assets/images/pexels-photo-5677627.jpeg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.form{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    background-color: rgba(240, 248, 255, 0.8); 
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0px 5px 20px 10px rgba(0,0,0,0.2);
+    
+}
+
+
+.form h1{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    background-color:rgb(7, 106, 60);color:white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+form .field{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .field .input-area{
+    position:relative;
+}
+
+form input{
+     height: 50px;
+    width: 100%;
+    /* outline: none;  */
+    /* padding: 0 15px; */
+    padding-left: 40px;
+    font-size:18px;
+    border-radius: 8px;
+    border:1px solid;
+    border-bottom-width:2px;
+    color:#34495e;   
+}
+
+form input::placeholder{
+    color:#bfbfbf;
+    font-size: 17px;  
+}
+
+form .field i{
+    position: absolute;
+    top:50%;
+    font-size: 18px;
+    /* pointer-event:none; */
+    transform: translateY(-50%);
+    margin-right:40px;
+}
+
+form .field .icon{
+ left:15px;
+ color:#34495e; 
+ 
+}
+
+form select{
+    height:50px;
+    width:100%;
+    outline:none;
+    padding:0 15px;
+    border-radius: 8px;
+    border:1px solid; 
+    border-bottom-width:2px ;
+    font-size: 18px;
+}
+
+/* form button[type="submitA"]{
+margin-top: 40px;
+border:none;
+background-color: rgba(9, 126, 7, 0.924);
+color:#fff;
+font-size: 20px;
+cursor: pointer;
+} */
+
+form a[type="Back"]{
+    margin-top: 40px;
+    border:none;background-color: #f44336;
+    color:#fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+button {
+    color: white;
+    height:50px;
+    margin: 40px 0; 
+    border: none;
+    /* font-size: 18px; */
+    width: 100%;
+    border-radius: 8px;    
+} 
+
+
+button a{
+    color:white;
+    text-decoration: none;
+    
+}
+  
+.Regbtn, .Loginbtn {
+    float: left;
+    width:50%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+form p{
+    color:#fa3426;
+    text-align:left;
+    margin-left:10px; 
+    font-size:17px; 
+}
+
+.Regbtn a:hover{
+    color:yellow;
+} 
+
+.Loginbtn:hover{
+    color:yellow;
+}
