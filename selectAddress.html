@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./assets/css/all.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/selectAddress.css">
-    <link rel="stylesheet" href="./assets/css/homePage.css">
+    <!-- <link rel="stylesheet" href="./assets/css/homePage.css">   -->
+    <link rel="stylesheet" href="./assets/css/registration.css"> 
     <link rel="icon" type="images/x-icon" href="./assets/images/favicon.png">
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-white fixed-top">
      <div class="container">
-       <a class="navbar-brand" href="#"></a>
        <img src="./assets/images/pexels-photo-5677627.jpeg" alt="logo" class="logo">
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
        <div class="collapse navbar-collapse" id="navbarScroll">
          <ul class="navbar-nav m-auto my-1">
            <li class="nav-item">
-             <a class="nav-link active" href="#">Home</a>
+             <a class="nav-link active" href="./homePage.html">Home</a>
            </li>
            <li class="nav-item">
              <a class="nav-link" href="#">About us</a>
@@ -34,7 +34,7 @@
              <a class="nav-link" href="#">Trending</a>
            </li>
            <li class="nav-item ">
-             <a class="nav-link" href="#">Store</a>
+             <a class="nav-link" href="./homePage.html">Store</a>
            </li>
            <li class="nav-item">
              <a class="nav-link" href="#">More Information</a>
@@ -44,18 +44,16 @@
        </div>
      </div>
    </nav>
- </header> 
-    
-      
+</header> 
                 
 <div class="container">
-      <div class="card">
+  <form>
+      <div class="card" >
               <h1 class="text text-center">Add New Address</h1> 
-              <table class="table table-bordered table-active table-striped table-primary">
+              <!-- <table class="table table-bordered table-active table-striped table-primary">
                   <thead>
                     
                       <tr>
-                        
                           <th>S.No</th>
                           <th>Name</th>
                           <th>H.no</th>
@@ -113,22 +111,69 @@
                   </tr>
                   </tbody>
                   
-              </table>
-              <!-- download button -->
-              <div class="d-grid mt-2">
+              </table> -->
+              
+              
+                    <div class="name">
+                        <div class="input-area">
+                            <input type="text" placeholder="First Name" id="fname">
+                            
+                        </div>
+                        <p id=""></p>
+                    </div>
+                    <div class="mobile">
+                        <div class="input-area">
+                            <input type="number" placeholder="Mobile No" id="mobile">
+                           
+                        </div>
+                        <p id=""></p>
+                    </div>
+                    <div class="address"">
+                        <div class="input-area">
+                            <input type="text" placeholder="Address"" id="address">
+                        </div>                
+                         <p id=""></p>
+                    </div>
+                    <div class="city">
+                        <div class="input-area">
+                            <input type="text" placeholder="City" id="City">
+                            
+                        </div>
+                        <p id=""></p>
+                    </div>
+                    <div class=" password">
+                        <div class="input-area">
+                            <input type="State" placeholder="State " id="state">
+                            
+                        </div>
+                        <p id=""></p>
+                    </div>
+                    <div class="Pin Code">
+                        <div class="input-area">
+                            <input type="text" placeholder="Pin Code" id="contact" >
+                            
+                        </div>
+                        <p id=""></p>
+                    </div>
+                    <div class="d-grid mt-2">
+                        <!-- <button type="button" value="Submit" class="Loginbtn btn btn-success" onclick="validateForm()">Submit</button> -->
+
+                        <button class="btn btn-danger" type="Back"><a href="./invoice.html">Add Address</a></button>
+
+                    </div>
+                
+            </div>
+
+
+
+              <!-- <div class="d-grid mt-2">
                   <button class="btn btn-danger btn-lg" ><a href="./homePage.html">Back To Home<a/></button> 
-              </div>     
+              </div>      -->
                  
           
       </div>
+    </form>
   </div>
-
-
-
-    
-    
-
-
 
     <script src="./assets/js/selectAddress.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>

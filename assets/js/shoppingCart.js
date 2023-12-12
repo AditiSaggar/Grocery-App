@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
-    cartItems.forEach(cartItem => {
+cartItems.forEach(cartItem => {
         fetch(`https://fakestoreapi.com/products/${cartItem.id}`)
             .then(response => response.json())
             .then(productDetails => {
@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 let removeCell = document.createElement("td");
                 removeCell.innerHTML = `<button class="btn btn-danger" onclick="removeProduct(${productDetails.id})">Remove</button>`;
-                
                 row.appendChild(removeCell);
 
                 cartBody.appendChild(row);

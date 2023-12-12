@@ -1,7 +1,7 @@
 function loginUser(){
     let email=document.getElementById("email").value;
     let password=document.getElementById("password").value;
-
+    debugger
     if (email===""){
         document.getElementById("email_error").innerHTML="Please fill up your Email";
         return false;
@@ -21,16 +21,15 @@ function loginUser(){
     let parsedData = JSON.parse(localStorage.getItem(email));
     if(email == parsedData.email && password == parsedData.password){
 
-        // alert("user is valid")
+        alert("user is valid")
         
         window.location.href = "../../homePage.html";
+        return false;
     }
     else{
         alert("invalid username");
     }
-
-
-
+    return true;
 }
 
 
