@@ -21,13 +21,12 @@ function loginUser(){
     let parsedData = JSON.parse(localStorage.getItem(email));
     if(email == parsedData.email && password == parsedData.password){
 
-        alert("user is valid")
+        alert("Welcome")
         
         window.location.href = "../../homePage.html";
-        return false;
     }
     else{
-        alert("invalid username");
+        alert("invalid User");
     }
     return true;
 }

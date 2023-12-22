@@ -3,112 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/invoice.css">
     <link rel="icon" type="images/x-icon" href="./assets/images/favicon.png">
     
-    <title>invoice</title>
+    <title>Invoice</title>
 </head>
 <body>
     <div class="container">
         <div class="form">
-           
-                <h1 class="text text-center">Invoice</h1> 
-
-                <img src="./assets/images/pexels-photo-5677627.jpeg" alt="logo" class="logo">
-
-                 <h2 class="text text-center">Grocery Store</h2>
-           
-            <form class=details>
-                <div class="details">
+            <h1 class="text text-center">Invoice</h1> 
+            <img src="./assets/images/pexels-photo-5677627.jpeg" alt="logo" class="logo">
+            <h2 class="text text-center">Grocery Store</h2>
+            
+            <form class="details">
+                <!-- <div class="details">
                     <p><strong>Order ID:</strong> 123456</p>
                     <p><strong>Date:</strong> 7-12-2023</p>
                     <p><strong>Contact us:</strong> 9878546522</p>
+                </div> -->
+                <div class="row" id="address">
 
                 </div>
+                <div ></div>
                 <table class="table table-bordered table-active table-striped table-success">
                     <thead>
+                        
                         <tr>
-                            <th>S.No</th>
                             <th>Product Name</th>
-                            <th>Image</th>
-                            <th>Count</th>
+                            <th>Quantity</th>
                             <th>Total Amount</th>
-                            
-
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>1.</strong></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><strong>2.</strong></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <!-- <tr>
-                            <td><strong>3.</strong></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><strong>4.</strong></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr> -->
+                    <tbody  id="invoiceItem">
+                      
                         
                     </tbody>
                     
                     <tfoot>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><strong>Total Amount:</strong></td>
-                            <td></td>
+                        <tr >
+                           <td></td>
+                            <td><strong>Total <Amount:</Amount:span></strong></td>
+                            <td><strong><span id="totalPrice"></span></strong></td>
                         </tr>
                     </tfoot>
                 </table>
+                
                 <!-- download button -->
                 <div class="text text-center m-2">
                     <button class="btn btn-danger btn-lg"><a href="./homePage.html">Back To Home<a/></button> 
                 </div>     
-                   
             </form>
         </div>
     </div>
   
     <script src="./assets/js/invoice.js"></script>
-      <script src="./assets/js/bootstrap.bundle.js"></script>
-    
+    <script src="./assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>
-
-<!-- <div id="invoicePage">
-    <h1>Invoice</h1>
-    <div id="orderDetails">
-       
-    </div>
-    <div id="paymentSection">
-       
-    </div>
-</div>
-
-<div id="myOrdersPage">
-    <h1>My Orders</h1>
-    <ul id="orderList">
-        
-    </ul>
-</div> -->

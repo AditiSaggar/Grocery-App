@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="card-body">
                             <h2 class="card-title mt-3"><strong>${productDetails.title}</strong></h2>
                             <p class="card-price"><strong>Price: </strong>₹${productDetails.price}</p>
-                            <input type="number" class="quantity-input p-2 " value="2" min="2" max="10">
+                            <input type="number" class="quantity-input p-2 " value="3" min="3" max="10">
                             <p class="mt-2"><strong>Product Description: </strong></p>
                             <p class="card-text">${productDetails.description}</p>
                             <button class="btn btn-warning p-2 mt-3" onclick="addToCart(${productId})">Add to Cart</button>
@@ -38,7 +38,7 @@ function addToCart(productId) {
     } else {
         cartItems.push({
             id: productId,
-            quantity: 1
+            quantity: 3
         });
     }
 

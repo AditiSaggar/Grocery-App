@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     let cartBody = document.getElementById("cartBody");
 
@@ -19,15 +18,15 @@ cartItems.forEach(cartItem => {
                 row.appendChild(imageCell);
 
                 let priceCell = document.createElement("td");
-                priceCell.textContent = `₹${productDetails.price}`;
+                priceCell.innerHTML = `₹${productDetails.price}`;
                 row.appendChild(priceCell);
 
                 let quantityCell = document.createElement("td");
-                quantityCell.textContent = cartItem.quantity;
+                quantityCell.innerHTML = `${cartItem.quantity}`;
                 row.appendChild(quantityCell);
 
                 let subtotalCell = document.createElement("td");
-                subtotalCell.textContent = `₹${productDetails.price * cartItem.quantity}`;
+                subtotalCell.innerHTML = `₹${productDetails.price * cartItem.quantity}`;
                 row.appendChild(subtotalCell);
 
                 let removeCell = document.createElement("td");
@@ -61,7 +60,7 @@ function updateCartTotal() {
     let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
     let totalAmount = cartItems.reduce((total, cartItem) => {
-        return total + cartItem.quantity;
+        return total + (cartItem.price *cartItem.quantity);
     }, 0);
 
 }

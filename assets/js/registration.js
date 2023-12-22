@@ -62,6 +62,6 @@ function validateForm() {
 
   localStorage.setItem(email, JSON.stringify(userDetails));
 
-  window.location.href = "./assets/pages/loginPage.html";
+  window.location.href = "../../homePage.html";
 
 }

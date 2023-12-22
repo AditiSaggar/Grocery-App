@@ -41,7 +41,7 @@
     margin-right: -45px;
     outline: none;
 }
-
+ 
 
 
 .btn1{  
@@ -136,4 +136,8 @@
 
 .text{
     color:white
+}
+
+#navbarScroll ul{
+    float: right;
 }
